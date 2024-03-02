@@ -1,0 +1,81 @@
+@import "../styles/default.scss";
+@import "../styles/variable.scss";
+@import "../styles/fields.scss";
+@import "../styles/font.scss";
+@import "../styles/home.scss";
+
+::-moz-selection { 
+  background: #1E566D;
+}
+
+::selection {
+  color: white;
+  background: #01D9AE;
+}
+
+body {
+  margin: 0;
+  background-image: url('/bg.jpg'); 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.success_cl {
+  color: $success !important;
+}
+
+.default_cl {
+  color: $dark !important;
+}
+
+.content {
+  margin-left: 250px;
+}
+
+.sitemap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #212121;
+  padding: 0;
+}
+
+.sitemap ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sitemap li {
+  margin: 0 20px;
+}
+
+.sitemap button {
+  background-color: #363636;
+  border-radius: 100px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.loader-container {
+  height: 20vh;
+  margin-bottom: 70vh;
+}
+
+@media screen and (max-width: 821px) {
+  .content {
+    margin-left: 0px;
+  }
+}
